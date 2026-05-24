@@ -9,24 +9,11 @@ idea iteration one
 2: input a number of codons to read in a string
 3: recognizes the introns and exons in a string
 
-idea iteration two
-3: 
+1-codon strain: AUG
+3-codon strain: AUG CUG UGA
+5-codon strain: AUG UCU UGG CAA UAG
+7-codon strain: AUG AAU GAC CAC GCC AUA UAA
+10-codon strain: AUG AGU UAU CAG CGG AUC GUG UGC UGG UGA
 
-
-
-
-Every stop codon begins with uracil (U) in the 
-first position. The three sequences, UAA, UAG, 
-and UGA, are universal across nearly all life. 
-They carry historical nicknames from early genetics 
-research: UAG is “amber,” UAA is “ochre,” and UGA is 
-“opal.” Because no transfer RNA is designed to pair with 
-these codons, the ribosome essentially hits a wall. 
-Instead of adding another amino acid, the machinery 
-shifts into termination mode.
-
-UAA is often considered the most “reliable” stop codon because 
-it is recognized by the widest range of release factors across 
-species. UGA is the most frequently reassigned codon in nature, 
-sometimes coding for an amino acid rather than stopping 
-translation (more on that below).
+1-exon strain: GUG AAA CUA (AUG CUC UGA) UUU CGG GAC
+2-exon strain: CCC GGA UCU (AUG GUG UAA) GAC AAG AUA (AUG GCC UAG) GCA AGC AAU
