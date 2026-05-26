@@ -1,19 +1,12 @@
-program ideas
-
 what is being tested:
-1. ability to read # of codons in a strain (1, 3, 5, 7, 10) (including start-stop codons)
+1. ability to read # of codons in a strain (1, 3, 5, 7, 10)
 2. ability to recognize coding and non-coding sections (start is always AUG)
 
-idea iteration one
-1: reads one codon
-2: input a number of codons to read in a string
-3: recognizes the introns and exons in a string
+1-codon strain: AUG (expected to return Methionine)
+3-codon strain: AUGCUGUGA (expected to return Methionine-Leucine, stops)
+5-codon strain: AUGUCUUGGCAAUAG (expected to return Methionine-Serine-Tryptophan-Glutamine, stops)
+7-codon strain: AUGAAUGACCACGCCAUAUAA (expected to return Methionine-Asparagine-Aspartic acid-Histidine-Alanine-Isoleucine, stops)
+10-codon strain: AUGAGUUAUCAGCGGAUCGUGUGCUGGUGA (expected to return Methionine-Serine-Tyrosine-Glutamine-Arginine-Isoleucine-Valine-Cysteine-Tryptophan, stops)
 
-1-codon strain: AUG
-3-codon strain: AUG CUG UGA
-5-codon strain: AUG UCU UGG CAA UAG
-7-codon strain: AUG AAU GAC CAC GCC AUA UAA
-10-codon strain: AUG AGU UAU CAG CGG AUC GUG UGC UGG UGA
-
-1-exon strain: GUG AAA CUA (AUG CUC UGA) UUU CGG GAC
-2-exon strain: CCC GGA UCU (AUG GUG UAA) GAC AAG AUA (AUG GCC UAG) GCA AGC AAU
+1-exon strain: GUGAAACUAAUGCUCUGAUUUCGGGAC (expected to return Methionine-Leucine, stops)
+2-exon strain: CCCGGAUCUAUGGUGUAAGACAAGAUAAUGGCCUAGGCAAGCAAU (expected to return Methionine-Valine-Methionine-Alanine, stops)
