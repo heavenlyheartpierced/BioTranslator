@@ -1,0 +1,1 @@
+The programs listed in this repository are programs made to translate RNA codons and RNA strains into their associated amino acids and polypeptides. This was done by a student at Skyview High School, Vancouver, Washington, as part of the 2026 SMT Showcase.
